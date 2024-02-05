@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Задание 1</h2>
+    <div>
+        let a = 1, b = 1;<br>
+        let c = ++a;<br>
+        let d = b++;<br>
+        В результате a = 2, b = 2, c = 2, d = 1;
+
+    </div>
+    <h2>Задание 2</h2>
+    <div>
+        let a = 2; <br>
+        let x = 1 + (a *= 2);
+        <p>В результате a = 4, x = 5</p>
+    </div>
+    <h2>Задание 3</h2>
+    <div>
+        "" + 1 + 0 Результат: 10<br>
+        "" - 1 + 0 Результат: -1<br>
+        true + false Результат: 1<br>
+        6 / "3" Результат: 2<br>
+        "2" * "3" Результат: 6<br>
+        4 + 5 + "px" Результат: 45px, ошибся тут, результат 9px из-за приоритета<br>
+        "$" + 4 + 5 Результат: $45<br>
+        "4" - 2 Результат: 2<br>
+        "4px" - 2 Результат: NaN<br>
+        " -9 " + 5 Результат: " -9 5<br>
+        " -9 " - 5 Результат: -14<br>
+        null + 1 Результат: 1<br>
+        undefined + 1 Результат: NaN<br>
+        " \t \n" - 2 Результат: -2<br>
+    </div>
+    <h2>Задание 4</h2>
+    <div>
+        let a = prompt("Первое число: ", 1);<br>
+        let b = prompt("Второе число: ", 2);<br>
+        alert(a + b);
+        <p>Ошибка в том, что prompt возвращает введеные данные в виде строки,
+            их необходимо преобразовать в числовой тип для правильного сложения
+        </p>
+        <pre>
+            Исправленный код:
+            let a = prompt("Первое число: ", 1);
+            let b = prompt("Второе число: ", 2);
+            alert(+a + +b); // Или alert(Number(a) + Number(b));
+        </pre>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

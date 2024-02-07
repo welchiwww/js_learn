@@ -24,10 +24,30 @@ value ||= 40;
 alert(value);
 
 //Задание 7
-let checkNum = +prompt('Введите число для проверки', '');
-if (checkNum >=14 && checkNum <= 90){
+let age = +prompt('Введите число для проверки', '');
+if (age >=14 && age <= 90){
     alert('Число в диапазоне от 14 до 90');
 } 
 else {
     alert('Число не в диапазоне от 14 до 90');
 }
+
+//Задание 8
+let checkNum = +prompt(`Введите число для проверки НЕ`, ``);
+if(checkNum < 14 || checkNum > 90){
+    alert(`Число NE в диапазоне от 14 до 90`)
+} else{
+    alert(`Число в диапазоне`);
+}
+
+checkNum = +prompt(`Альтернативный способ проверки, введите число`, ``);
+if (!(checkNum >= 14 && checkNum <= 90)){
+    alert(`Число не в диапазоне`);
+} else{
+    alert(`Число в диапазоне от 14 до 90`);
+}
+
+//Задание 9
+if (-1 || 0) alert( 'first' );
+if (-1 && 0) alert( 'second' );
+if (null || -1 && 1) alert( 'third' );

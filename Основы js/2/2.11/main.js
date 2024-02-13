@@ -1,4 +1,5 @@
 //Задание 1
+/*
 alert( null || 2 || undefined );
 
 //Задание 2
@@ -51,3 +52,27 @@ if (!(checkNum >= 14 && checkNum <= 90)){
 if (-1 || 0) alert( 'first' );
 if (-1 && 0) alert( 'second' );
 if (null || -1 && 1) alert( 'third' );
+
+*/
+
+//Задание 10
+
+let userName = prompt("Введите имя пользователя:", "");
+
+if (userName == '' || userName == null) {
+    alert("Отменено");
+} else
+    if (userName == 'Админ') {
+        let password = prompt('Введите пароль:', '');
+        if (password == '' || password == null) {
+            alert('Отменено');
+        } else if (password == 'Я главный') {
+            alert('Здравствуйте!');
+        } else {
+            alert('Неверный пароль!');
+        }
+
+    }
+    else {
+        alert('Я вас не знаю');
+    }

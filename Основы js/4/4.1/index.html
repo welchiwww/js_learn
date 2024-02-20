@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Напишите код, выполнив задание из каждого пункта отдельной строкой:
+            Создайте пустой объект user.
+            Добавьте свойство name со значением John.
+            Добавьте свойство surname со значением Smith.
+            Измените значение свойства name на Pete.
+            Удалите свойство name из объекта.
+            ./main.js
+        </pre>
+    </div><!--Задание 1-->
+    <div>
+        <pre>
+            Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
+
+            Должно работать так:
+            let schedule = {};
+            alert( isEmpty(schedule) ); // true
+            schedule["8:30"] = "get up";
+            alert( isEmpty(schedule) ); // false
+        </pre>
+    </div><!--Задание 2-->
+    <div>
+        <pre>
+            У нас есть объект, в котором хранятся зарплаты нашей команды:
+            let salaries = {
+                John: 100,
+                Ann: 160,
+                Pete: 130
+              }
+              Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+              Если объект salaries пуст, то результат должен быть 0.
+        </pre>
+    </div><!--Задание 3-->
+    <div>
+        <pre>
+            const user = {
+                name: "John"
+              };
+              
+              // это будет работать?
+              user.name = "Pete";
+              Это будет работать т.к. const user = {...} означает защиту от записи самого объекта, но не его полей. user = 1111; не будет работать как раз из-за этого const.
+        </pre>
+    </div><!--Задание 4-->
+    <div>
+        <pre>
+            Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
+            Например:
+            // до вызова функции
+            let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+            };
+
+            multiplyNumeric(menu);
+
+            // после вызова функции
+            menu = {
+                width: 400,
+                height: 600,
+                title: "My menu"
+            };
+        </pre>
+    </div><!--Задание 5-->
+    <script src="./main.js"></script>
+</body>
+</html>

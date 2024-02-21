@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <pre>
+            Здесь функция makeUser возвращает объект.
+            Каким будет результат при обращении к свойству объекта ref? Почему?
+            function makeUser() {
+                return {
+                  name: "John",
+                  ref: this
+                };
+              }
+              let user = makeUser();
+              alert( user.ref.name ); // Каким будет результат?
+              Будет ошибка, undefined
+        </pre>
+    </div><!--Задание 1-->
+    <div>
+        <pre>
+            Создайте объект calculator (калькулятор) с тремя методами:
+            read() (читать) запрашивает два значения и сохраняет их как свойства объекта с именами a и b.
+            sum() (суммировать) возвращает сумму сохранённых значений.
+            mul() (умножить) перемножает сохранённые значения и возвращает результат.
+            let calculator = {
+                // ... ваш код ...
+              };
+              
+              calculator.read();
+              alert( calculator.sum() );
+              alert( calculator.mul() );
+
+              ./main.js
+        </pre>
+    </div><!--Задание 2-->
+    <div>
+        <pre>
+        </pre>
+    </div><!--Задание 3-->
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
